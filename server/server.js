@@ -7,11 +7,14 @@ const commentRoutes = require('./routes/comments');
 const userRoutes = require('./routes/users');
 require('dotenv').config();
 const dbUrl = process.env.DATABASE_URL;
-
-
-const port=8080
+const frontendUrl=process.env.API_URL;
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: process.env.API_URL, // Allow only frontend from this origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+}));
+
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
