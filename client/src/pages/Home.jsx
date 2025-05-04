@@ -85,7 +85,7 @@ const Home = () => {
         )}
       </main>
 
-      <footer className="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg py-6 mt-auto">
+      <footer className="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg py-6 mt-[180px]">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p>© {new Date().getFullYear()} TechBlog. All rights reserved.</p>
         </div>
