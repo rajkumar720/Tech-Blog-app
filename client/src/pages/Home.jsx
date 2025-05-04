@@ -85,7 +85,7 @@ const Home = () => {
         )}
       </main>
 
-      <footer className="bg-gray-800 text-white py-6 mt-[100px]">
+      <footer className="bg-gray-800 text-white py-6 mt-[150px]">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p>© {new Date().getFullYear()} TechBlog. All rights reserved.</p>
         </div>
